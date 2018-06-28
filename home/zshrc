@@ -118,7 +118,6 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
 # Elements options of right prompt
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 
-
 # Add a second prompt line for the command
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
