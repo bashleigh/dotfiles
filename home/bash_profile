@@ -3,7 +3,9 @@
 
 GIT_PS1_SHOWDIRTYSTATE=true
 
-eval $(docker-machine env default)
+if [ -x "$(command -v docker-machine)" ]; then 
+  eval $(docker-machine env default)
+fi
 eval $(thefuck --alias)
 
 # The next line updates PATH for the Google Cloud SDK.
