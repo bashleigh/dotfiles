@@ -10,21 +10,21 @@ if ! [ -x "$(command -v brew)" ]; then
     exit 1;
 fi
 
-declare -a commands=("git" "gpg" "zsh", "zsh-completions", "node", "neofetch", "thefuck", "wget", "docker", "docker-compose", "docker-machine", "xhyve", "docker-machine-driver-xhyve", "docker-machine-nfs", "hub", "ngrok")
+declare -a commands=("git" "gpg" "node" "neofetch" "thefuck" "wget" "docker" "docker-compose" "docker-machine" "xhyve" "docker-machine-driver-xhyve" "docker-machine-nfs" "hub" "ngrok")
 
 for i in "${commands[@]}"
 do
-    if ! [ -x "$(command -v $i)"]
-        brew install $i
+    if ! [ -x "$(command -v $i)" ]; then
+        brew install $i;
     fi
 done
 
-if ! [ -x "$(command -v iterm2)"]
-    brew cask install iterm2 
+if ! [ -x "$(command -v zsh)" ]; then
+    brew install zsh zsh-completions
 fi
 
-brew cask install vmware-fusion
+brew cask install vmware-fusion iterm2
 
-if [ ! -f "~/Library/Fonts/Meslo LG M Regular for Powerline.ttf"]; then 
+if [ ! -f "~/Library/Fonts/Meslo LG M Regular for Powerline.ttf" ]; then 
     wget -O "~/Library/Fonts/Meslo LG M Regular for Powerline.ttf" https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf?raw=true 
 fi

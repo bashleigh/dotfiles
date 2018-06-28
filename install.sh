@@ -2,6 +2,7 @@
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # detect package manager and call relative installer
+    echo"Linux dists not supported yet";
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     sh ./installs/mac.sh
 else 
