@@ -24,4 +24,4 @@ npm i -g gtop ctop yarn n loadtest
 ln -s ./home/bash_profile ~/.bash_profile
 ln -s ./home/zshrc ~/.zshrc
 
-# Soruce the correct packages depending on terminal
+# Source the correct packages depending on terminal
