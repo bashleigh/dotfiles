@@ -1,0 +1,14 @@
+#General alias'
+alias ll="ls -l"
+
+#Docker alias'
+alias docker-composer="docker-compose"
+alias dc="docker-compose"
+alias dp="docker ps"
+alias dcl="docker logs -f -t"
+alias dme="eval $(docker-machine env default)"
+
+#git alias'
+alias gc="git commit -as"
+alias gp="git push"
+alias gpp="git pull"
