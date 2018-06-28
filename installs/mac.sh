@@ -10,13 +10,15 @@ if ! [ -x "$(command -v brew)" ]; then
     exit 1;
 fi
 
-declare -a comamnds=("git" "gpg" "zsh", "zsh-completions", "node", "neofetch", "thefuck")
+declare -a commands=("git" "gpg" "zsh", "zsh-completions", "node", "neofetch", "thefuck", "wget", "docker", "docker-compose", "docker-machine", "xhyve", "docker-machine-driver-xhyve", "docker-machine-nfs", "hub")
 
 for i in "${commands[@]}"
 do
-    brew install $i
+    if ! [ -x "$(command -v $i)"]
+        brew install $i
+    fi
 done
 
-brew cask install iterm2 
-
-brew install docker docker-compose docker-machine xhyve docker-machine-driver-xhyve docker-machine-nfs
+if ! [ -x "$(command -v iterm2)"]
+    brew cask install iterm2 
+fi
