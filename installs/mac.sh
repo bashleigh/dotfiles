@@ -26,5 +26,6 @@ fi
 brew cask install vmware-fusion iterm2
 
 if [ ! -f "~/Library/Fonts/Meslo LG M Regular for Powerline.ttf" ]; then 
-    wget -O "~/Library/Fonts/Meslo LG M Regular for Powerline.ttf" https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf?raw=true 
+    wget https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf?raw=true 
+    mv Meslo\ LG\ M\ Regular\ for\ Powerline.ttf\?raw=true ~/Library/Fonts/Meslo\ LG\ M\ Regular\ for\ Powerline.ttf
 fi
