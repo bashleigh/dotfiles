@@ -13,4 +13,4 @@ alias gc="git commit -as"
 alias gp="git push"
 alias gpp="git pull"
 
-alias vsc="open -a "visual studio code" 
+alias vsc="open -a 'visual studio code'"

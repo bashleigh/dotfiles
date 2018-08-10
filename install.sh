@@ -21,9 +21,6 @@ echo "Installing node packages"
 
 npm i -g gtop ctop yarn n loadtest
 
-## check if source is required
-ln -sf $(pwd)/home/aliases ~/.aliases
-ln -sf $(pwd)/home/bash_profile ~/.bash_profile
-ln -sf $(pwd)/home/zshrc ~/.zshrc
+sh ./setup.sh
 
 # Source the correct packages depending on terminal
