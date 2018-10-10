@@ -10,7 +10,7 @@ if ! [ -x "$(command -v brew)" ]; then
     exit 1;
 fi
 
-declare -a commands=("git" "gpg" "node" "neofetch" "thefuck" "wget" "docker" "docker-compose" "docker-machine" "xhyve" "docker-machine-driver-xhyve" "docker-machine-nfs" "hub" "ngrok")
+declare -a commands=("git" "gpg" "node" "neofetch" "thefuck" "wget" "docker" "docker-compose" "docker-machine" "xhyve" "docker-machine-driver-xhyve" "docker-machine-nfs" "hub" "ngrok" "tree")
 
 for i in "${commands[@]}"
 do
